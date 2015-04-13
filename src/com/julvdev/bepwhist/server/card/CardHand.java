@@ -2,6 +2,7 @@ package com.julvdev.bepwhist.server.card;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class CardHand {
@@ -35,6 +36,10 @@ public class CardHand {
 	
 	public void addCard(Card card) {
 		cards.add(card);
+	}
+	
+	public void addCards(List<Card> cards) {
+		this.cards.addAll(cards);
 	}
 	
 	public int getSize() {
